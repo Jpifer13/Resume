@@ -16,7 +16,7 @@ const Contact = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://your-api-endpoint.com/contact', {
+      const response = await fetch('https://mail.pixelum.io/dev/api/mail/me', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
