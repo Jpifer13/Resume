@@ -116,6 +116,10 @@ const Resume = () => {
         <h3>Twitch Chat Bot</h3>
         <p>Built a Python chat bot for Twitch streams using IRC that automates responses and tracks user activity for giveaways. Continuously updated and running on my home server.</p>
       </div>
+      
+      <footer>
+        <p>© {new Date().getFullYear()} Jake Pifer. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
