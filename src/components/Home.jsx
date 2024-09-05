@@ -40,22 +40,20 @@ const Resume = () => {
       <div className="resume-section">
         <h2>Previous Work</h2>
         <br />
-        <h3>JKBX (Feb/2023 - Feb/2024) - Lead Backend Engineer</h3>
-        <p className="italics">(Layoffs) Entire engineering dept. lay of due to budget</p>
+        <h3>JKBX - Lead Backend Engineer</h3>
         <p>Founding engineer and lead. As a Lead Backend Engineer at JKBX, I spearheaded the development and
           deployment of a robust backend architecture, leveraging my expertise in Python, Node, and AWS. My
           role was pivotal in building the entire infrastructure from the ground up, employing Infrastructure as
           Code (IaC) principles and establishing efficient DevOps pipelines.</p>
         <br />
 
-        <h3>Floating Point Group (Apr/2022 - Nov/2022) - Backend Python Engineer</h3>
-        <p className="italics">(Layoffs) Company closure</p>
+        <h3>Floating Point Group - Backend Python Engineer</h3>
         <p> Worked among highly skilled engineers to build out an institutional crypto brokerage platform. AWS
           usage with CDK managing all services. Worked in getting core Flowvault, Python, system fleshed out as
           well as contributed heavily to Metamask Institutional integration, Node, with the Flowvault system.</p>
         <br />
 
-        <h3>Lululemon (July/2021 - Apr/2022) - Lead Backend Engineer</h3>
+        <h3>Lululemon - Lead Backend Engineer</h3>
         <p>Lead backend engineer on Store Comms team developing serverless infrastructure solutions for high
           traffic Voice Over IP systems. High use of AWS’s API Gateway, Lambda, Serverless Application Model,
           S3, Python and Node. Team DevOps engineer leveraging Gitlab CI/CD. As well as working on Reporting
@@ -63,14 +61,14 @@ const Resume = () => {
           and working alongside frontend lead.</p>
         <br />
 
-        <h3>Q2 Solutions (Nov/2019 - July/2021) - Software Engineer</h3>
+        <h3>Q2 Solutions - Software Engineer</h3>
         <p>Primary API developer and secondary database developer on a large team whose project is to be used
           globally(see below for project details). Started at the ground level of the project and have designed and
           built up the API layer from nothing to MVP, so far. Collaborate with client side developers and other
           teams regularly as my team’s project controls the flow of all DNA/RNA sequencing data company wide.</p>
         <br />
 
-        <h3>TOURtech (Dec/2018 - Aug/2019) - Full Stack Developer</h3>
+        <h3>TOURtech - Full Stack Developer</h3>
         <p>Primary software developer on a team of three. Built main web application from ground to release one.
           Worked on all aspects of each project from the database to the middleware/api to the client ui.
         </p>
