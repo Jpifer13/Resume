@@ -1,5 +1,7 @@
 .background-container {
-    background: #5f6171;
+    background-color: #121212;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1; /* Ensure the background is behind other content */
 
     &::after,
     &::before {

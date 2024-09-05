@@ -6,21 +6,21 @@ const Skills = () => {
     Languages: [
       { name: 'Python', level: 'Advanced', proficiency: 100 },
       { name: 'Node', level: 'Advanced', proficiency: 100 },
-      { name: 'Java', level: 'Intermediate', proficiency: 70 },
-      { name: 'JavaScript', level: 'Intermediate', proficiency: 70 },
+      { name: 'Java', level: 'Intermediate', proficiency: 50 },
+      { name: 'JavaScript', level: 'Intermediate', proficiency: 50 },
     ],
     Databases: [
-      { name: 'Oracle', level: 'Advanced', proficiency: 100 },
-      { name: 'SQLAlchemy', level: 'Advanced', proficiency: 100 },
-      { name: 'PostgreSQL', level: 'Advanced', proficiency: 100 },
-      { name: 'DynamoDB', level: 'Advanced', proficiency: 100 },
+        { name: 'PostgreSQL', level: 'Advanced', proficiency: 100 },
+        { name: 'DynamoDB', level: 'Advanced', proficiency: 100 },
+        { name: 'SQLAlchemy', level: 'Advanced', proficiency: 90 },
+        { name: 'Oracle', level: 'Advanced', proficiency: 75 },
     ],
     Frameworks: [
       { name: 'FastAPI', level: 'Advanced', proficiency: 100 },
       { name: 'Flask', level: 'Advanced', proficiency: 100 },
       { name: 'OpenAPI/Swagger', level: 'Advanced', proficiency: 100 },
-      { name: 'Angular', level: 'Intermediate', proficiency: 70 },
-      { name: 'React/Redux', level: 'Intermediate', proficiency: 70 },
+      { name: 'Angular', level: 'Intermediate', proficiency: 50 },
+      { name: 'React/Redux', level: 'Intermediate', proficiency: 60 },
     ],
   };
 

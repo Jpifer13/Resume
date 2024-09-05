@@ -96,6 +96,10 @@ p {
     animation: flicker 1.5s infinite alternate;
 }
 
+p.italics {
+    font-style: italic;
+}
+
 /* 8-bit flicker animation */
 @keyframes flicker {
     0% {

@@ -31,11 +31,138 @@
     /* Visual separation */
 }
 
+
+/* Contact Button */
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    left: 95%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background-color: #f1c40f;
+    ;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid black;
+    font-family: 'Press Start 2P', cursive;
+    /* 8-bit retro font */
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px black;
+}
+
+.contact-button:hover {
+    background-color: #C70039;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black */
+    z-index: 200;
+    /* Ensure it's on top of everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #87CEEB;
+    /* Light blue to fit the 8-bit theme */
+    border: 3px solid black;
+    padding: 20px;
+    width: 400px;
+    /* Make the form wider */
+    max-width: 90%;
+    font-family: 'Press Start 2P', cursive;
+    /* 8-bit retro font */
+    box-shadow: 8px 8px black;
+    position: relative;
+    z-index: 300;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px; /* Size of the X */
+    width: 40px;     /* Make the button wide enough */
+    height: 40px;    /* Make the button tall enough */
+    display: flex;   /* Use flexbox to center the X */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;   /* Ensure it is in front of other elements */
+    border: 2px solid black;
+    box-sizing: border-box; /* Ensure padding and border don't affect size */
+  }
+  
+  .close-btn:hover {
+    background-color: darkred; /* Optional hover effect */
+  }
+  
+
+/* Form Styling */
+form label {
+    display: block;
+    margin: 10px 0;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: 'Press Start 2P', cursive;
+    /* 8-bit retro font */
+    border: 3px solid black;
+    box-shadow: 4px 4px black;
+    background-color: #fff;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #00FF00;
+    border: 3px solid black;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    /* 8-bit retro font */
+    box-shadow: 4px 4px black;
+}
+
+form button:hover {
+    background-color: #008000;
+}
+
+
 @keyframes lightning-flash {
-    0%, 80% {
+
+    0%,
+    80% {
         opacity: 0;
     }
-    95%, 100% {
+
+    95%,
+    100% {
         opacity: 1;
     }
 }
