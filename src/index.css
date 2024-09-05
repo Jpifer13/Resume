@@ -55,6 +55,79 @@
     background-color: #C70039;
 }
 
+.audio-button {
+    position: fixed;
+    top: 20px;
+    left: 95%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background-color: #f1c40f;
+    ;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid black;
+    font-family: 'Press Start 2P', cursive;
+    /* 8-bit retro font */
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px black;
+}
+
+.audio-button:hover {
+    background-color: #C70039;
+}
+
+/* Style for the vertical slider */
+.vertical-slider {
+    -webkit-appearance: none;
+    width: 8px;
+    height: 80px;
+    background: #f1c40f;
+    /* Yellow background */
+    /* transform: rotate(270deg); */
+    /* Rotate it to make vertical */
+    position: fixed;
+    /* right: 20px; */
+    /* Position on the right side of the screen */
+    top: 10%;
+    left: 85%;
+    /* Center it vertically */
+    margin-top: -75px;
+    /* Half of the slider's height */
+    z-index: 100;
+}
+
+.vertical-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #e67e22;
+    /* Orange thumb */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.vertical-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #e67e22;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Ensure the slider stays at the right side */
+.volume-control {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* Popup Overlay */
 .popup-overlay {
     position: fixed;
@@ -95,22 +168,29 @@
     background-color: red;
     color: white;
     border: none;
-    font-size: 20px; /* Size of the X */
-    width: 40px;     /* Make the button wide enough */
-    height: 40px;    /* Make the button tall enough */
-    display: flex;   /* Use flexbox to center the X */
+    font-size: 20px;
+    /* Size of the X */
+    width: 40px;
+    /* Make the button wide enough */
+    height: 40px;
+    /* Make the button tall enough */
+    display: flex;
+    /* Use flexbox to center the X */
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 1000;   /* Ensure it is in front of other elements */
+    z-index: 1000;
+    /* Ensure it is in front of other elements */
     border: 2px solid black;
-    box-sizing: border-box; /* Ensure padding and border don't affect size */
-  }
-  
-  .close-btn:hover {
-    background-color: darkred; /* Optional hover effect */
-  }
-  
+    box-sizing: border-box;
+    /* Ensure padding and border don't affect size */
+}
+
+.close-btn:hover {
+    background-color: darkred;
+    /* Optional hover effect */
+}
+
 
 /* Form Styling */
 form label {
