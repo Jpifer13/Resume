@@ -1,0 +1,57 @@
+.wand {
+    position: relative;
+    width: 10px;
+    height: 100px;
+    background: linear-gradient(to top, #6b4226, #8b5e3c);
+    clip-path: polygon(50% 0%, 70% 100%, 30% 100%);
+    cursor: pointer;
+    transform: rotate(-30deg); /* Start at an angle */
+    transition: transform 0.3s ease;
+  }
+  
+  .sparkle {
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    opacity: 0;
+    animation: sparkle 1.5s infinite;
+  }
+  
+  @keyframes sparkle {
+    0%, 100% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .wand.clicked {
+    animation: flick 0.5s ease forwards;
+  }
+  
+  @keyframes flick {
+    0% {
+      transform: rotate(-30deg); /* Start angle */
+    }
+    50% {
+      transform: rotate(20deg); /* Flick motion */
+    }
+    100% {
+      transform: rotate(0deg); /* Return to neutral */
+    }
+  }
+  
+  .hint {
+    margin-top: 20px;
+    color: lightgray;
+    font-style: italic;
+    font-size: 16px;
+  }
+  

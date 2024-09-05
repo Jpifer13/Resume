@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.scrollable-content {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    padding: 20px;
+    padding-bottom: 150px;
+    border: none;
+    background-color: transparent;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    display: none;
+}
+
+.resume-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    margin: 100px 0; /* Add space between sections */
+    padding: 50px 20px; /* Add padding around text */
+    padding-top: 400px; /* Add space for the fixed header */
+    color: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #000;
+    line-height: 1.6; /* Improve line spacing */
+}
+
+.resume-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 20%;
+    color: #f1c40f;
+    font-size: 2.5rem;
+    animation: bounce 2s infinite;
+    text-decoration: underline;
+    text-align: center; /* Ensure text is centered */
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #f1c40f; /* Gold color for fantasy style */
+    margin: 20px auto;
+    animation: bounce 2s infinite;
+    display: block;
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+h3,
+li {
+    color: #f1c40f;
+    font-size: 1.5rem;
+    /* Larger text */
+    animation: flicker 1.5s infinite alternate;
+}
+
+h2 {
+    color: #f1c40f;
+    font-size: 2.5rem;
+    /* Larger text */
+    animation: flicker 1.5s infinite alternate;
+    text-decoration: underline;
+}
+
+p {
+    color: #f1c40f;
+    font-size: 1.5rem;
+    /* Larger text */
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* 8-bit flicker animation */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: translateY(-2px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a.link {
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+a.link:hover {
+    text-decoration: underline;
+    animation: bounce 0.3s ease infinite alternate;
+    /* Add bounce animation on hover */
+}
+
+/* Simple bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
